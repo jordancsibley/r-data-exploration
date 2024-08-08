@@ -5,5 +5,57 @@ format: html
 editor: visual
 ---
 
-## Connecting this to github 
+## Instructions 
 - Set up your local and remote git repo by running usethis::use_git() and then usethis::use_github()
+
+- Attach the {tidyverse}, {skimr}, and {GGally} packages in the setup code chunk
+```{r}
+library(tidyverse)
+library(skimr)
+library(GGally)
+```
+
+- Run View(diamonds) in the Console to look at the built-in diamonds data set in R
+
+- Explore the data set using the functions names(), dim(), summary(), head(), tail(), and skimr::skim()
+```{r}
+# exploring data 
+names(diamonds)
+
+dim(diamonds)
+
+summary(diamonds)
+
+head(diamonds)
+
+tail(diamonds)
+
+skimr::skim(diamonds)
+```
+
+- Create a pairs plot using ggpairs()
+```{r}
+GGally::ggpairs(diamonds)
+```
+
+- Create a basic ggplot scatterplot of diamond price (price) as a function of size (carat)
+
+```{r}
+ggplot(data = diamonds, aes(x = price, y = carat))+
+  geom_point()
+```
+
+- Create a histogram showing the distribution of values in the carat column (recall: a histogram only requires a single variable, e.g. aes(x = carat))
+
+```{r}
+ggplot(data = diamonds, aes(x = carat))+
+  geom_histogram()
+```
+
+- Save, stage, commit, pull, then push your changes back to your repo in RStudio using the GUI interface (buttons)
+
+
+- Create a boxplot (see: geom_boxplot) of diamond clarity (on the x-axis) and price (y-axis).
+In the command line, stage, commit, & push changes
+
+
