@@ -52,7 +52,8 @@ ggplot(data = diamonds, aes(x = carat))+
   geom_histogram()
 ```
 
-- Save, stage, commit, pull, then push your changes back to your repo in RStudio using the GUI interface (buttons)
+
+-Save, stage, commit, pull, then push your changes back to your repo in RStudio using the GUI interface (buttons)
 
 
 - Create a boxplot (see: geom_boxplot) of diamond clarity (on the x-axis) and price (y-axis).
