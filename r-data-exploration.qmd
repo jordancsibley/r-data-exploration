@@ -1,0 +1,9 @@
+---
+title: "r data exploration"
+author: "Jordan Sibley"
+format: html
+editor: visual
+---
+
+## Connecting this to github 
+- Set up your local and remote git repo by running usethis::use_git() and then usethis::use_github()
